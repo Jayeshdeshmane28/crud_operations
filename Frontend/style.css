@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:wght@400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+.container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #99004d 0%, #ff0080 100%);;
+    display: grid;
+}
+.form-container{
+    place-self: center;
+    width: max(23vw,350px);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 25px 30px;
+    border-radius: 8px;
+    font-size: 14px;
+    animation:fadeIn 0.5s;
+}
+h2{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color: black;
+    font-size: 30px;
+    font-weight: 600;
+}
+#login ,#signup{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#login input,#signup input{
+    outline: none;
+    border: 1px solid #c9c9c9;
+    padding: 10px;
+    border-radius: 5px;
+}
+#login button, #signup button{
+    border: none;
+    padding: 10px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    cursor: pointer;
+    background: linear-gradient(to right, #99004d 0%, #ff0080 100%);
+    transition: all 0.3s ease;
+}
+#login button:hover,#signup button:hover{
+    letter-spacing: 1px;
+    cursor: pointer;
+    background: linear-gradient(to left, #99004d 0%, #ff0080 100%);
+}
+.login-terms{
+    display: flex;
+    align-items: start;
+    gap: 8px;
+    margin-top: -15px;
+}
+.login-terms input{
+    margin-top: 5px;
+}
+#go-to-signup #go-to-login{
+    color:#ff0080 ;
+    font-weight: 500;
+    cursor: pointer;
+}
+#go-to-signup,#go-to-login{
+    text-decoration: none;
+}
+#go-to-signup,#go-to-login:hover{
+    text-decoration:underline;
+}
+
+.hidden{
+    display: none;
+}
